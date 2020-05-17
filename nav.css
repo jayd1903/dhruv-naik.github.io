@@ -47,7 +47,7 @@
   align-items: center;
 }
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 15cm) {
+@media screen and (min-width: 15cm) {
   /* Show Hamburger Icon */
   #nav {
     display: block;
