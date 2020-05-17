@@ -1,132 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Education</title>
-  <link href="ham-menu.css" rel="stylesheet" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Minimal Responsive Navigation | HTML & CSS</title>
+      <link rel="stylesheet" href="master.css">
 </head>
 <body>
-  <style>
-    /* [ON BIG SCREEN] */
-    /* Wrapper */
-
-    #nav {
-      width: 100%;
-      background: #6feaf7;
-      /* Optional */
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      vertical-align: bottom;
-    }
-    .burg {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    /* Hide Hamburger */
-    #nav label,
-    #hamburger {
-      display: none;
-    }
-
-    /* Horizontal Menu Items */
-    #items {
-      display: flex;
-    }
-    #items a {
-      width: 20%; /* 100% / 5 tabs = 20% */
-      padding: 10px;
-      padding-top: 4vh;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-    }
-    #items a:hover {
-      background: #6feaf7;
-    }
-    .logo {
-      cursor: pointer;
-      text-decoration: none;
-      padding-top: 4vh;
-      color: white;
-      font-size: 5vh;
-      padding-bottom: 2vh;
-      align-items: center;
-    }
-
-    /* [ON SMALL SCREENS] */
-    @media screen and (min-width: 800px) {
-      /* Show Hamburger Icon */
-      #nav {
-        display: block;
-      }
-      #nav label {
-        padding-top: 10vh;
-        display: inline-block;
-        color: white;
-        background: #6feaf7;
-        font-style: normal;
-        font-size: 5vh;
-        padding: 10px;
-      }
-      .logo {
-        padding-top: none;
-        padding-left: 38vw;
-      }
-      /* Break down menu items into vertical */
-      #items a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        padding-bottom: 10px;
-      }
-
-      /* Toggle Show/Hide Menu */
-      #items {
-        display: none;
-      }
-      #nav input:checked ~ #items {
-        display: block;
-      }
-    }
-    /* [DOES NOT MATTER] */
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-      font-family: arial, sans-serif;
-      color: blueviolet;
-    }
-  </style>
-  <!--<link rel="stylesheet" type="text/css" href="nav.css" /> -->
-
-  <nav id="nav">
-    <!-- [THE HAMBURGER] -->
-    <div class="burg">
-      <label for="hamburger">&#9776;</label>
-
-      <a class="logo" href="index.html">logo</a>
-    </div>
-    <input type="checkbox" id="hamburger" />
-
-    <!-- [MENU ITEMS] -->
-    <div id="items">
-      <a href="about.html">About</a>
-      <a href="tech.html">Courses</a>
-      <a href="games.html">Donate</a>
-      <a href="reviews.html">Instagram</a>
-    </div>
-  </nav>
-  <div>
-    <h1>
-      "15 cm Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
-    </h1>
-  </div>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="#">BRAND</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Overview</a></li>
+                              <li><a href="#">Prices</a></li>
+                              <li><a href="#">Purchase</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
 </body>
+</html>
