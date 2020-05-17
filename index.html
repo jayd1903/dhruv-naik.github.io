@@ -4,7 +4,102 @@
   <link href="ham-menu.css" rel="stylesheet" />
 </head>
 <body>
-  <link rel="stylesheet" type="text/css" href="nav.css" />
+  <style>
+    /* [ON BIG SCREEN] */
+    /* Wrapper */
+
+    #nav {
+      width: 100%;
+      background: #6feaf7;
+      /* Optional */
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      vertical-align: bottom;
+    }
+    .burg {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    /* Hide Hamburger */
+    #nav label,
+    #hamburger {
+      display: none;
+    }
+
+    /* Horizontal Menu Items */
+    #items {
+      display: flex;
+    }
+    #items a {
+      width: 20%; /* 100% / 5 tabs = 20% */
+      padding: 10px;
+      padding-top: 4vh;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+    #items a:hover {
+      background: #6feaf7;
+    }
+    .logo {
+      cursor: pointer;
+      text-decoration: none;
+      padding-top: 4vh;
+      color: white;
+      font-size: 5vh;
+      padding-bottom: 2vh;
+      align-items: center;
+    }
+
+    /* [ON SMALL SCREENS] */
+    @media screen and (max-width: 800px) {
+      /* Show Hamburger Icon */
+      #nav {
+        display: block;
+      }
+      #nav label {
+        padding-top: 10vh;
+        display: inline-block;
+        color: white;
+        background: #6feaf7;
+        font-style: normal;
+        font-size: 5vh;
+        padding: 10px;
+      }
+      .logo {
+        padding-top: none;
+        padding-left: 38vw;
+      }
+      /* Break down menu items into vertical */
+      #items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+
+      /* Toggle Show/Hide Menu */
+      #items {
+        display: none;
+      }
+      #nav input:checked ~ #items {
+        display: block;
+      }
+    }
+    /* [DOES NOT MATTER] */
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: arial, sans-serif;
+      color: blueviolet;
+    }
+  </style>
+  <!--<link rel="stylesheet" type="text/css" href="nav.css" /> -->
 
   <nav id="nav">
     <!-- [THE HAMBURGER] -->
