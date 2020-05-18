@@ -212,11 +212,8 @@ nav ul li a {
 }
 .quote {
   padding-top: 10vh;
-
-  display: flex;
-  font-size: 4vh;
-
   align-items: center;
+  display: flex;
 }
 .img {
   width: 50vw;
