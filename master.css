@@ -204,16 +204,12 @@ nav ul li a {
   display: none;
 }
 
-.main {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20vh;
-  justify-content: space-between;
-}
 .quote {
   padding-top: 10vh;
   align-items: center;
   display: flex;
+  padding-right: 10vw;
+  padding-left: 20vw;
 }
 .img {
   width: 50vw;
