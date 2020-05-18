@@ -13,16 +13,16 @@ html {
     background-color: whitesmoke;
   }
   30% {
-    background-color: lightblue;
+    background-color: lightcyan;
   }
   60% {
-    background-color: lightgoldenrodyellow;
+    background-color: lightblue;
   }
   90% {
-    background-color: lightcoral;
+    background-color: lightskyblue;
   }
   100% {
-    background-color: lightyellow;
+    background-color: lightsteelblue;
   }
 }
 body {
