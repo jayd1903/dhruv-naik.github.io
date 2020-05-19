@@ -2,6 +2,7 @@ body {
   background-color: #fff;
   color: #777;
   font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  padding: 0 0 0 0;
 }
 p {
   line-height: 20px;
@@ -309,6 +310,8 @@ nav ul li a {
 @media screen and (max-width: 864px) {
   #features ul {
     flex-direction: column;
+    float: left;
+    padding-left: 0;
   }
   #features ul li {
     width: 60%;
@@ -318,13 +321,13 @@ nav ul li a {
   }
   #features ul li.feature-1 {
     background: rgb(255, 178, 165);
-    padding-right: 8vw;
+
     height: 45vh;
     padding-top: 4vh;
   }
   #features ul li.feature-2 {
     background: rgb(255, 178, 165);
-    padding-right: 8vw;
+
     padding-top: 4vh;
     height: 40vh;
   }
